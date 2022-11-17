@@ -1,6 +1,6 @@
-import random #random szám gen.
-import os #oprendszer
-import time #késleltetés
+import random
+import os
+import time
 
 
 def clear():
@@ -82,7 +82,7 @@ def rps():
             print("TIE GAME!")
 
         print("***********")
-        time.sleep(1)
+        time.sleep(2)
         clear()
 
 
@@ -92,7 +92,7 @@ if __name__ == '__main__':
     # The mapping between moves and numbers
     game_map = {0: "rock", 1: "paper", 2: "scissors"}
 
-    # Win-lose matrix for the game (-1:tie; the other 2 number:higher->winner,lower->loser)
+    # Win-lose matrix for the game(scissors->paper->rock) (0:tie; -1:loser; 1:winner)
     rps_table = [[-1, 1, 0], [1, -1, 2], [0, 2, -1]]
 
     name = input("Enter your name: ")
