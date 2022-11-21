@@ -18,6 +18,7 @@ Ezután 3 definíció jön.
 clear(): a konzolra kiírt adatokat fogja letörölni két játék között
 
 rps_instructions(): a játék alapszabályait írja ki a konzolra
+
 rps(): 3 globális változót tartalmaz
 
 
